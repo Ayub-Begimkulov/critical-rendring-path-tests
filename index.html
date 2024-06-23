@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Critical rendering path</title>
+  </head>
+  <body>
+    <h1>Testing critical rendering path</h1>
+    <script src="./js/first?timeout=5000"></script>
+    <link rel="stylesheet" href="/css/first?timeout=10000" />
+    <script src="./js/second?timeout=5000"></script>
+    <div>Some additional content</div>
+  </body>
+</html>
